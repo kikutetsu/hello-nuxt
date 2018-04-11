@@ -4,6 +4,8 @@
       app-logo
       h1.title
         | Show
+      img(src="~/assets/image/test.jpg")
+      img(src="/image/test.jpg")
 </template>
 
 <script>
