@@ -3,6 +3,8 @@
     div
       h1.title
         | Works
+      nuxt-link(to="/works") works
+      nuxt-link(to="/works/show") show
       nuxt-child
 </template>
 
@@ -17,6 +19,12 @@ export default {
 </script>
 
 <style lang="scss">
+a {
+  margin: 0 20px;
+}
+.nuxt-link-exact-active {
+  color: #f00;
+}
 .container {
   min-height: 100vh;
   display: flex;
